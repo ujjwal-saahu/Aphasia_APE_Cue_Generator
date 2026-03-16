@@ -1,0 +1,2 @@
+﻿ape_round,parent_prompt_id,prompt_id,prompt_family,prompt_text,mean_proxy_score,mean_similarity,mean_brevity,mean_target_leak,selection_status
+1,,ape_1_3f37953d,resampled,"""生成一句包含動物和地點的自然療癒句子，幫助失語症患者。""",0.5076986765288389,0.4221233465780432,0.85,0.1461538461538461,selected

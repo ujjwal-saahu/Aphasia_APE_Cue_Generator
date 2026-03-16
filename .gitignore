@@ -1,0 +1,83 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+venv/
+env/
+ENV/
+
+# Conda
+conda-meta/
+
+# =========================
+# VS Code / IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Environment / secrets
+# =========================
+.env
+.env.*
+*.env
+
+# =========================
+# Python build artifacts
+# =========================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# Caches
+# =========================
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.huggingface/
+hf_cache/
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.bak
+*.swp
+
+# =========================
+# Large model weights only
+# Keep model configs/tokenizers, ignore huge weights
+# =========================
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.gguf
