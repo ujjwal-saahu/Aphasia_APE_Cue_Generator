@@ -73,7 +73,6 @@ hf_cache/
 
 # =========================
 # Large model weights only
-# Keep model configs/tokenizers, ignore huge weights
 # =========================
 *.safetensors
 *.bin
@@ -81,3 +80,25 @@ hf_cache/
 *.pth
 *.ckpt
 *.gguf
+
+# =========================
+# Additional large model / image files
+# =========================
+models/
+*.onnx
+*.onnx_data
+*.msgpack
+
+# =========================
+# Generated images / test images
+# =========================
+results/generated_images_raw/
+results/generated_images_mobile/
+results/test_sdxl_image.png
+
+# =========================
+# Large image outputs
+# =========================
+*.png
+*.jpg
+*.jpeg
