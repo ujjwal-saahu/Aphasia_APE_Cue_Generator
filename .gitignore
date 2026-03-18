@@ -17,8 +17,6 @@ __pycache__/
 venv/
 env/
 ENV/
-
-# Conda
 conda-meta/
 
 # =========================
@@ -35,9 +33,18 @@ Thumbs.db
 desktop.ini
 
 # =========================
-# Logs
+# Logs / temp / cache
 # =========================
 *.log
+*.tmp
+*.bak
+*.swp
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.huggingface/
+hf_cache/
 
 # =========================
 # Environment / secrets
@@ -55,24 +62,15 @@ dist/
 .eggs/
 
 # =========================
-# Caches
+# Large model folders
+# Keep folder structure with .gitkeep only
 # =========================
-.cache/
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.huggingface/
-hf_cache/
+models/**
+!models/**/
+!models/**/.gitkeep
 
 # =========================
-# Temporary files
-# =========================
-*.tmp
-*.bak
-*.swp
-
-# =========================
-# Large model weights only
+# Large model / binary files
 # =========================
 *.safetensors
 *.bin
@@ -80,25 +78,45 @@ hf_cache/
 *.pth
 *.ckpt
 *.gguf
-
-# =========================
-# Additional large model / image files
-# =========================
-models/
 *.onnx
 *.onnx_data
 *.msgpack
 
 # =========================
-# Generated images / test images
+# Generated image folders
+# Keep folder structure with .gitkeep only
 # =========================
-results/generated_images_raw/
-results/generated_images_mobile/
+results/generated_images/**
+!results/generated_images/.gitkeep
+
+results/generated_images_raw/**
+!results/generated_images_raw/.gitkeep
+
+results/generated_images_mobile/**
+!results/generated_images_mobile/.gitkeep
+
+# =========================
+# Test image outputs
+# =========================
 results/test_sdxl_image.png
 
 # =========================
-# Large image outputs
+# Large image files
 # =========================
 *.png
 *.jpg
 *.jpeg
+
+# =========================
+# Keep important exports
+# =========================
+!data/final/*.csv
+!data/final/*.json
+
+# =========================
+# Keep notebooks and source code
+# =========================
+!notebooks/**
+!src/**
+!README.md
+!.gitignore
